@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 25 83% 11%; /* Desaturated #341603 */
+    --foreground: 36 71% 85%; /* Light beige for text */
+
+    --muted: 25 80% 20%;
+    --muted-foreground: 36 70% 55%;
+
+    --popover: 25 83% 9%;
+    --popover-foreground: 36 71% 85%;
+
+    --card: 25 80% 14%;
+    --card-foreground: 36 71% 85%;
+
+    --border: 25 80% 25%;
+    --input: 25 80% 20%;
+
+    --primary: 36 71% 90%; /* #fae9d2 - Light Beige/Off-white as primary highlight */
+    --primary-foreground: 25 83% 11%; /* Dark brown for text on primary */
+
+    --secondary: 263 50% 35%; /* A muted violet for secondary elements */
+    --secondary-foreground: 36 71% 90%; /* Light text for on secondary */
+
+    --accent: 45 65% 52%; /* Gold #D4AF37 */
+    --accent-foreground: 25 83% 11%; /* Dark brown for text on accent */
+
+    --destructive: 0 63% 40%; /* Darker red for destructive actions */
+    --destructive-foreground: 36 71% 90%;
+
+    --ring: 45 65% 52%; /* Gold for focus rings */
+    --radius: 0.5rem;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    
+    --sidebar-background: 25 83% 10%; /* Darker background for sidebar */
+    --sidebar-foreground: 36 71% 75%; /* Slightly dimmer text for sidebar */
+    --sidebar-primary: 45 65% 52%; /* Gold accent for sidebar primary items */
+    --sidebar-primary-foreground: 25 83% 11%;
+    --sidebar-accent: 25 80% 15%; /* Darker accent for sidebar hover */
+    --sidebar-accent-foreground: 36 71% 90%;
+    --sidebar-border: 25 80% 20%;
+    --sidebar-ring: 45 65% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
